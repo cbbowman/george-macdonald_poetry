@@ -34,7 +34,8 @@ header{
 	display: none;
 }
 
-[epub|type~="z3998:poem"] header p{
+[epub|type~="z3998:poem"] header p,
+[epub|type~="z3998:poem"] hgroup p{
 	text-align: center;
 }
 
