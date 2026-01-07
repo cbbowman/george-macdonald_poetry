@@ -43,6 +43,10 @@ p span.i1{
 	padding-left: 2em;
 	text-indent: -1em;
 }
+
+.dl2 span:first-child{
+	vertical-align: 100%;
+}
 /* End poem, verse */
 
 /* Footers */
