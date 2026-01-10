@@ -44,6 +44,16 @@ p span.i1{
 	text-indent: -1em;
 }
 
+p span.i4{
+	padding-left: 5em;
+	text-indent: -1em;
+}
+
+p span.i5{
+	padding-left: 6em;
+	text-indent: -1em;
+}
+
 .dl2 span:first-child{
 	vertical-align: 100%;
 }
