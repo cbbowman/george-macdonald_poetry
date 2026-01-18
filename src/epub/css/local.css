@@ -6,6 +6,14 @@ section{
 	break-after: page;
 }
 
+/* Headers not in ToC */
+header{
+	font-variant: small-caps;
+	margin: 1em;
+	text-align: center;
+}
+/* End headers not in ToC */
+
 /* Poem, verse */
 [epub|type~="z3998:poem"] p,
 [epub|type~="z3998:verse"] p{
