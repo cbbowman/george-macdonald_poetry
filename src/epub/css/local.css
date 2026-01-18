@@ -146,3 +146,16 @@ p span.i7{
 	vertical-align: 100%;
 }
 /* End poem, verse */
+
+/* Footers */
+footer [epub|type~="z3998:signature"]{
+	font-variant: small-caps;
+}
+
+[epub|type~="z3998:poem"] footer p,
+[epub|type~="z3998:verse"] footer p{
+    margin-right: 1em;
+    margin-top: 1em;
+    text-align: right;
+}
+/* End footers */
