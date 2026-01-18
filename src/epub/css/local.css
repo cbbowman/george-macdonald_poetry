@@ -32,6 +32,50 @@ header{
 }
 /* End all bridgeheads */
 
+/* Centered dedications */
+div[epub|type~="dedication"],
+section[epub|type~="dedication"]{
+	text-align: center;
+}
+
+div[epub|type~="dedication"] > *,
+section[epub|type~="dedication"] > *{
+	display: inline-block;
+	margin: auto;
+	margin-top: 3em;
+	max-width: 80%;
+}
+
+@supports(display: flex){
+	div[epub|type~="dedication"],
+	section[epub|type~="dedication"]{
+		align-items: center;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		min-height: calc(98vh - 3em);
+		padding-top: 3em;
+	}
+
+	div[epub|type~="dedication"] > *,
+	section[epub|type~="dedication"] > *{
+		margin: 0;
+	}
+
+	div[epub|type~="dedication"] header,
+	section[epub|type~="dedication"] header{
+		margin-bottom: 1em;
+	}
+
+	div[epub|type~="dedication"] footer,
+	section[epub|type~="dedication"] footer{
+		align-self: flex-end;
+		text-align: right;
+	}
+}
+/* End centered dedications */
+
 /* Poem, verse */
 [epub|type~="z3998:poem"] p,
 [epub|type~="z3998:verse"] p{
