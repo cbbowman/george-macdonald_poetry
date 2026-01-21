@@ -68,7 +68,6 @@ section[epub|type~="dedication"] > *{
 		margin-bottom: 1em;
 	}
 
-	div[epub|type~="dedication"] footer,
 	section[epub|type~="dedication"] footer{
 		align-self: flex-end;
 		text-align: right;
@@ -83,19 +82,10 @@ section[epub|type~="dedication"] > *{
 	-epub-hyphens: none;
 }
 
-[epub|type~="epigraph"] em,
-[epub|type~="epigraph"] i{
-	font-style: normal;
-}
-
 [epub|type~="epigraph"] cite{
 	font-style: normal;
 	font-variant: small-caps;
 	margin-top: 1em;
-}
-
-[epub|type~="epigraph"] cite i{
-	font-style: italic;
 }
 /* End all epigraphs */
 
@@ -124,9 +114,7 @@ section[epub|type~="dedication"] > *{
 }
 
 [epub|type~="z3998:poem"] header p,
-[epub|type~="z3998:verse"] header p,
-[epub|type~="z3998:poem"] hgroup p,
-[epub|type~="z3998:verse"] hgroup p{
+[epub|type~="z3998:poem"] hgroup p{
 	text-align: center;
 }
 
@@ -155,16 +143,6 @@ p span.i5{
 	text-indent: -1em;
 }
 
-p span.i6{
-	padding-left: 7em;
-	text-indent: -1em;
-}
-
-p span.i7{
-	padding-left: 8em;
-	text-indent: -1em;
-}
-
 .dl2 span:first-child{
 	vertical-align: 100%;
 }
@@ -175,8 +153,7 @@ footer [epub|type~="z3998:signature"]{
 	font-variant: small-caps;
 }
 
-[epub|type~="z3998:poem"] footer p,
-[epub|type~="z3998:verse"] footer p{
+[epub|type~="z3998:poem"] footer p{
     margin-right: 1em;
     margin-top: 1em;
     text-align: right;
@@ -191,7 +168,7 @@ q,
 #a-prayer-for-the-past p:nth-of-type(-n+7),
 #a-prayer-for-the-past p:nth-of-type(14),
 #a-prayer-for-the-past p:nth-of-type(n+20):nth-of-type(-n+22),
-#a-prayer-for-the-past p:nth-of-type(n+27), 
+#a-prayer-for-the-past p:nth-of-type(n+27),
 #little-boy-blue p:nth-of-type(-n+4) span:nth-of-type(even),
 #little-boy-blue p:nth-of-type(79) span:nth-of-type(even),
 #a-meditation-of-st-eligius p:nth-of-type(-n+3){
@@ -200,7 +177,6 @@ q,
 /* End italicized text */
 
 /* Dramatic dialog */
-[epub|type~="z3998:drama"] table,
 table[epub|type~="z3998:drama"]{
 	border-collapse: collapse;
 	margin: 1em auto;
@@ -235,32 +211,7 @@ table[epub|type~="z3998:drama"]{
 	width: 20%;
 }
 
-[epub|type~="z3998:stage-direction"]{
-	font-style: italic;
-}
-
-[epub|type~="z3998:stage-direction"] [epub|type~="z3998:persona"],
-em [epub|type~="z3998:persona"],
-i [epub|type~="z3998:persona"]{
-	font-style: normal;
-}
-
-[epub|type~="z3998:stage-direction"]::before{
-	content: "(";
-	font-style: normal;
-}
-
-[epub|type~="z3998:stage-direction"]::after{
-	content: ")";
-	font-style: normal;
-}
-
 [epub|type~="z3998:persona"]{
 	font-variant: all-small-caps;
-}
-
-section[epub|type~="z3998:scene"] > p{
-	margin: 1em auto;
-	width: 75%;
 }
 /* End dramatic dialog */
